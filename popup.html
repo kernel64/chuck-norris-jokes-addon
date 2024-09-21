@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        max-width: 300px;
+      }
+      #joke {
+        margin-bottom: 10px;
+        margin-left: 5px;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .paypal {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .loader {
+        margin: 10px 0;
+        display: none;
+        text-align: center;
+      }
+      .loader img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="jk-icon" width="60px" style="float: left; display: none;"></img>
+    <div id="joke">Loading joke...</div>
+    <div class="loader" id="loader">
+      <img src="icons/anim.gif" alt="Loading..." />
+    </div>
+    <button id="refresh">Refresh Joke</button>
+
+    <!-- PayPal Donation Button -->
+    <div class="paypal">
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="business" value="aymen.kernel@gmail.com" />
+        <input type="hidden" name="no_recurring" value="1" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
