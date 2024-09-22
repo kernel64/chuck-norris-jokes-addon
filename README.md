@@ -21,7 +21,7 @@ If you want to test or modify the extension, here's how to do it:
    ```bash
    git clone https://github.com/your-username/chuck-norris-jokes-addon.git
    
-2. Open Firefox and go to about in the address bar.
+2. Open Firefox and go to "about:debugging" in the address bar.
 
 3. Select This Firefox and click on Load Temporary Add-on.
 
